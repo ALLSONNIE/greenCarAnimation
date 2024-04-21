@@ -1,0 +1,178 @@
+body{
+    background: rgb(231, 231, 245);
+}
+
+.container{
+    width: 801px;
+    height: 270px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: rgba(58, 53, 94, 0.966);
+}
+
+.stars{
+    width: 709px;
+    height: 107px;
+    background: url(../imgs/stars.png);
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    animation: fadeInStars 3s infinite;
+}
+
+.moon{
+    width: 59px;
+    height: 69px;
+    background: url(../imgs/moon.png);
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    animation: fadeInMoon 2s;
+}
+
+.left-cloud{
+    width: 191px;
+    height: 70px;
+    background: url(../imgs/cloud.png);
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    animation: slideLeft 2s;
+}
+
+.right-cloud{
+    width: 191px;
+    height: 70px;
+    background: url(../imgs/cloud.png);
+    position: absolute;
+    right: 115px;
+    top: 35px;
+    animation: slideRight 2s;
+}
+
+.road{
+    width: 801px;
+    height: 69px;
+    background: url(../imgs/road.png);
+    position: absolute;
+    bottom: 0px;
+}
+
+.right-tree{
+    width: 80px;
+    height: 108px;
+    background: url(../imgs/right-tree.png);
+    position: absolute;
+    right: 140px;
+    bottom: 67px;
+    animation: slideUp 2s;
+}
+
+.left-tree{
+    width: 83px;
+    height: 169px;
+    background: url(../imgs/left-tree.png);
+    position: absolute;
+    left: 125px;
+    bottom: 67px;
+    animation: slideUp 2s;
+}
+
+.rocks{
+    width: 104px;
+    height: 75px;
+    background: url(../imgs/rocks.png);
+    position: absolute;
+    left: 30px;
+    bottom: 67px;
+    animation: slideUp 2s;
+}
+
+.bushes{
+    width: 79px;
+    height: 22px;
+    background: url(../imgs/bushes.png);
+    position: absolute;
+    right: 40px;
+    bottom: 67px;
+    animation: slideUp 2s;
+}
+
+.car{
+    width: 355px;
+    height: 122px;
+    background: url(../imgs/car.png);
+    position: absolute;
+    left: 220px;
+    bottom: 50px;
+}
+
+.front-wheel{
+    width: 59px;
+    height: 60px;
+    background: url(../imgs/wheel.png);
+    position: absolute;
+    left: 253px;
+    bottom: 28px;
+    animation: rolling 2s ease-in-out infinite;
+}
+
+.back-wheel{
+    width: 59px;
+    height: 60px;
+    background: url(../imgs/wheel.png);
+    position: absolute;
+    right: 248px;
+    bottom: 28px;
+    animation: rolling 2s ease-in-out infinite;
+}
+
+@keyframes slideUp{
+    0%{
+        bottom: -45px;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        left: -45px;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        right: -45px;
+    }
+}
+
+@keyframes fadeInStars{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInMoon{
+    0%{
+        top: -65px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rolling { 
+    0%{ 
+        transform: rotate(360deg); 
+    }
+    100%{ 
+        transform: rotate(0deg); 
+    }
+}
